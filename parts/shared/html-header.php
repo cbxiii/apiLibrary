@@ -15,6 +15,8 @@
 		<!-- Linked CSS Files -->
 		<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/normalize.css">
 		<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/cb.css">
+		<link href='http://fonts.googleapis.com/css?family=Concert+One' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Merriweather:400,700,300' rel='stylesheet' type='text/css'>
 		
 		
 		
