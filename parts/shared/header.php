@@ -1,5 +1,5 @@
 <header>
-	<div class="logo">&#123; API + Library &#125;</div>
+	<div class="logo">&#123; A Piece of Data &#125;</div>
 	
 	<div class="information">
 	<p>A neat library of public API's to use inside your web project. Follow us on Twitter for updates.</p>

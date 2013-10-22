@@ -21,14 +21,20 @@
 <?php if ( have_posts() ): ?>
 <?php while ( have_posts() ) : the_post(); ?>
 
-<div class="post">
+<div class="post" style="background-image:url(<?php $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 230,270 ), false, '' ); echo $src[0]; ?>
+); background-size:cover;">
+
+	<div class="rating"><?php if(function_exists('the_ratings')) { the_ratings(); } ?><!-- &diams; &diams; &diams; &diams; &diams; --></div>
 	
 	<div class="postinfo">
-		<?php the_title();?>
+		<h2 class="post-title"><span class="brack">&#123;</span> <?php the_title();?> <span class="brack">&#125;</span></h2>
+		
+		<div class="linkbtn">&rarr;</div>
+		<div class="cat">Category</div>
+		
 	</div><!-- END Post Info -->
 	
 </div><!-- END Post -->
-
 
 
 
