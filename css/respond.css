@@ -1,0 +1,55 @@
+/* Styles for devices upto 640px */
+
+@media (max-width:640px) {
+
+	.leftnav, .information {
+	display: none;
+	}
+	
+	.gridcontainer {
+	margin-left: 0;
+	padding-top: 220px;
+	}
+	
+	.searchform {
+	float: none;
+	width: 100%;
+	margin: auto;
+	display: inline-block;
+	margin-top: 20px;
+	}
+	
+	header {
+	height: 200px;
+	width: 100%;
+	margin: auto;
+	}
+	
+	.logo {
+	margin: 0;
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	}
+	
+	.searchform input {
+	position: relative;
+	width: 100%;
+	margin: auto;
+	top:inherit;
+	right: inherit;
+	}
+
+	.post {
+	width: 95%;
+	margin: 0 auto;
+	float: none;
+	height: 400px;
+	margin-bottom: 30px;
+	}
+
+
+
+
+
+} /* END media query 640px */

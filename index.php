@@ -24,13 +24,15 @@
 <div class="post" style="background-image:url(<?php $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 230,270 ), false, '' ); echo $src[0]; ?>
 ); background-size:cover;">
 
+	<div class="overlay"><?php the_excerpt(); ?></div>
+
 	<div class="rating"><?php if(function_exists('the_ratings')) { the_ratings(); } ?><!-- &diams; &diams; &diams; &diams; &diams; --></div>
 	
 	<div class="postinfo">
 		<h2 class="post-title"><span class="brack">&#123;</span> <?php the_title();?> <span class="brack">&#125;</span></h2>
 		
-		<div class="linkbtn">&rarr;</div>
-		<div class="cat">Category</div>
+		<a href="<?php the_field('api_link'); ?>" target="_blank"><div class="linkbtn">&rarr;</div></a>
+		<div class="cat"><?php the_category(); ?></div>
 		
 	</div><!-- END Post Info -->
 	
@@ -45,7 +47,14 @@
 <?php else: ?>
 
 <?php endif; ?>
+
+
+
 </div> <!-- END grid container -->
 
+<div class="extra">
+	<a href="#" id="subapi">Submit an API</a>
+	<a href="http://www.cbxiii.com" target="_blank">Built by Chris Bradley</a>
+</div>
 
 <?php Starkers_Utilities::get_template_parts( array( 'parts/shared/footer','parts/shared/html-footer') ); ?>
